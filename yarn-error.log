@@ -1,0 +1,38 @@
+Arguments: 
+  /Users/rishavsharma/.nvm/versions/node/v14.19.1/bin/node /Users/rishavsharma/.nvm/versions/node/v14.19.1/bin/yarn add --dev tailwindcss
+
+PATH: 
+  /Users/rishavsharma/.bun/bin:/Users/rishavsharma/.nvm/versions/node/v14.19.1/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/npm-global/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Users/rishavsharma/.bun/bin:/Users/rishavsharma/.nvm/versions/node/v14.19.1/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Users/rishavsharma/Library/Python/3.10/bin:/Users/rishavsharma/.local/bin:/Users/rishavsharma/Library/Python/3.10/bin:/Users/rishavsharma/.local/bin:/Users/rishavsharma/Library/Python/3.10/bin:/Users/rishavsharma/.local/bin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  14.19.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:71:26)
+
+npm manifest: 
+  {
+    "name": "nft-website-responsive",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
