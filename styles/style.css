@@ -122,7 +122,7 @@ img {
         position: fixed;
         background-color: var(--body-color);
         width: 100%;
-        top: 0;
+        top: -100%;
         left: 0;
         box-shadow: 0 3px 8px hsla(201, 70%, 4%, 0.053);
         padding: 4rem 0rem 3.5rem;
@@ -159,6 +159,17 @@ img {
     font-size: 1.5rem;
 }
 
+.navImage {
+    left: 2rem;
+    width: 100px;
+    filter: drop-shadow(0 4px 20px rgba(255, 113, 149, 0.7));
+    bottom: -2rem;
+}
+
+/* Open Mobile menu */
+.openMenu {
+    top: 0;
+}
 
 /*-------- Home -------------*/
 
