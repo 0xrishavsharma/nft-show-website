@@ -59,6 +59,10 @@
     <main>
         <!-------------HOME---------->
         <section class="section" id="section">
+            <div class="homeShapeSmall"></div>
+            <div class="homeShapeBig1"></div>
+            <div class="homeShapeBig2"></div>
+            <img src="assets/img/shape-bg.png" class="homeShapeBg" alt="shapeBG">
             <div class="homeContainer container">
                 <div class="homeInfo">
                     <h1 class="homeTitle">
@@ -94,7 +98,7 @@
                             <span class="homeDataSubtitle">Creators</span>
                         </div>
                         <div>
-                            <h2 class="homeDataNumber">7k+</h2>
+                            <h2 class="homeDataNumber">7k +</h2>
                             <span class="homeDataSubtitle">Auctions</span>
                         </div>
                     </div>
@@ -124,8 +128,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </section>
     </main>
@@ -155,6 +157,14 @@
                 navMenu.classList.remove("openMenu");
             })
         })
+
+        // Change the background of header
+        const onScrollHeader = (e) => {
+            let header = document.querySelector(".header");
+            console.log(header)
+            this.scrollY >= 50 ? header.classList.add("onScrollHeader") : header.classList.remove("onScrollHeader");
+        }
+        window.addEventListener('scroll', onScrollHeader)
     </script>
 
 </body>
