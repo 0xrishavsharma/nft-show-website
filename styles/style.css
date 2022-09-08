@@ -11,11 +11,11 @@
 :root {
     --header-height: 3.5rem;
     /* Color theme */
-    --primary-color: #FF5F6D;
-    --secondary-color: #FFC371;
-    --text-color: rgb(18, 18, 18);
-    --text-color-light: rgb(31, 31, 31);
-    --body-color: #ffd1b4;
+    --primary-color: hsl(203, 71%, 60%);
+    --secondary-color: hsl(277, 56%, 68%);
+    --text-color: hsl(203, 8%, 98%);
+    --text-color-light: hsl(203, 8%, 80%);
+    --body-color: hsl(259, 20%, 18%);
 
     /* Font and Typography */
     --body-font: 'Oxanium', cursive;
@@ -65,10 +65,6 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: black;
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -106,6 +102,7 @@ img {
 
 .navLogo,
 .navMenu,
+.navLink,
 .menuCloseIcon,
 .toggleMenu {
     color: var(--text-color);
@@ -160,9 +157,9 @@ img {
 }
 
 .navImage {
-    left: 2rem;
-    width: 100px;
-    filter: drop-shadow(0 4px 20px rgba(255, 113, 149, 0.7));
+    left: 1rem;
+    width: 80px;
+    filter: drop-shadow(0 4px 20px hsla(203, 71%, 60%, 0.5));
     bottom: -2rem;
 }
 
@@ -171,9 +168,28 @@ img {
     top: 0;
 }
 
+/* Active link */
+.activeLink {
+    background: linear-gradient(90deg,
+            var(--secondary-color) 0%,
+            var(--primary-color) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 /*-------- Home -------------*/
 
+.homeContainer {
+    position: relative;
+    padding: 7rem 0 2rem;
+}
 
+.homeTitle {
+    font-size: var(--biggest-font-font);
+    margin-bottom: 0.75rem;
+}
+
+.homeTitle span {}
 
 /*-------- Breakpoints --------*/
 
