@@ -51,8 +51,8 @@ const x = setInterval(() => {
         seconds: seconds
     }
 
-    document.querySelector("#days").innerHTML = days;
-    document.querySelector("#hours").innerHTML = hours;
-    document.querySelector("#minutes").innerHTML = minutes;
-    document.querySelector("#seconds").innerHTML = seconds;
+    document.querySelector("#homeDays").innerHTML = days;
+    document.querySelector("#homeHours").innerHTML = hours;
+    document.querySelector("#homeMinutes").innerHTML = minutes;
+    document.querySelector("#homeSeconds").innerHTML = seconds;
 }, 1000);
