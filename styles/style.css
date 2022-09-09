@@ -494,29 +494,71 @@ img {
         margin-top: 2rem;
     }
 
-    /* 
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homeContainer {
+        height: 100vh;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        align-items: center;
+        justify-content: center;
+        gap: 2rem 4rem;
+    }
+
+    .homeData {
+        top: -6rem;
+        right: 0rem;
+    }
+
+
     .homeGroup {
         grid-row: 1/3;
         grid-column: 2/3;
         align-items: center;
-    } */
+    }
+
+    .homeImgEth {
+        width: 150px;
+    }
+
+    .homeImgOrbe {
+        width: 300px;
+    }
 
 
+    .homeShapeSmall,
     .homeShapeBig1,
     .homeShapeBig2 {
-        width: 250px;
-        height: 250px;
+        filter: blur(132px);
+    }
+
+    .homeShapeSmall {
+        width: 300px;
     }
 
     .homeShapeBig1 {
-        background-color: var(--primary-color);
-        top: 16rem;
-        right: 0rem;
+        width: 400px;
     }
 
     .homeShapeBig2 {
-        background-color: var(--secondary-color);
-        left: -3.5rem;
-        bottom: 0rem;
+        width: 400px;
+        left: 10rem;
+    }
+}
+
+@media screen and (min-width: 1048px) {
+    .container {
+        margin-inline: auto;
     }
 }

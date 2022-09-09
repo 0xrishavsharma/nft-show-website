@@ -132,40 +132,28 @@
         </section>
     </main>
 
-    <!-- Script -->
+    <!-- Main JS -->
+    <script src="scripts/main.js"></script>
+
+    <!-- Scroll reveal animation -->
+    <script src="scripts/scrollreveal.min.js"></script>
+
+    <!-- Scroll reveal animation -->
     <script>
-        // Close and open mobile nav menu
-        let toggleMenu = document.querySelector("#toggleMenu");
-        let menuCloseWrapper = document.querySelector("#menuCloseWrapper");
-        let menuCloseIcon = document.querySelector("#menuCloseIcon");
-        let navMenu = document.querySelector("#navMenu");
-
-        toggleMenu.addEventListener('click', () => {
-            if (!navMenu.classList.contains("openMenu")) {
-                navMenu.classList.add("openMenu");
-            }
-        })
-        menuCloseIcon.addEventListener('click', () => {
-            navMenu.classList.remove("openMenu");
+        const sr = ScrollReveal({
+            origin: 'bottom',
+            distance: '60px',
+            duration: 2500,
         })
 
-        // Close mobile menu when we click on individual nav links
-        let navLink = document.querySelectorAll(".navLink");
-        navLink.forEach((e) => {
-            e.addEventListener("click", (e) => {
-                e.preventDefault();
-                navMenu.classList.remove("openMenu");
-            })
-        })
-
-        // Change the background of header
-        const onScrollHeader = (e) => {
-            let header = document.querySelector(".header");
-            console.log(header)
-            this.scrollY >= 50 ? header.classList.add("onScrollHeader") : header.classList.remove("onScrollHeader");
-        }
-        window.addEventListener('scroll', onScrollHeader)
+        sr.reveal(`.homeImages`, { distance: '120px', delay: 400 })
+        sr.reveal(`.homeTitle`, { distance: '120px', delay: 1000 })
+        sr.reveal(`.homeDescription`, { distance: '120px', delay: 1200 })
+        sr.reveal(`.homeBtn`, { distance: '120px', delay: 1400 })
+        sr.reveal(`.homeBidInfo`, { distance: '120px', delay: 1600 })
+        sr.reveal(`.homeData div`, { distance: '120px', delay: 1800, origin: "right", interval: 200 })
     </script>
+
 
 </body>
 
